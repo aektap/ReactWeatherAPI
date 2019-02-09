@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Navigation from '../src/Navigation'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <div>
+      <Navigation />
+      <div className="container">
+      </div>
+      </div>
+      <div className="jumbotron">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <h1 id="location">Where to?</h1>
+          <p id="cloud">Whats the cloud cover like?</p>
+          <p id="kp"> Whats the KP index?</p>
+          <p id="message">To go, or not go outside? That is the question.</p>
+          </header>
+          </div>
+       
+  
+        
       </div>
     );
   }
