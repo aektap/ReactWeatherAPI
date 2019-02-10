@@ -11,8 +11,19 @@ class App extends Component {
     };
   }
 
-  getWeather = (lat, long) => {
-    let urlYellowknife = 'https://api.auroras.live/v1/?type=all&lat=62.4484&long=-114.42&forecast=false&threeday=false';     
+   getWeather = (lat, long) => {
+    let urlYellowknife = `https://api.auroras.live/v1/?type=all&lat=${lat}&long=-${long}&forecast=false&threeday=false`;   
+    let auroraData = {  
+      nameLoc: "No Location",
+      kpIndex: -1,
+      cloudCover: -1,
+      fogCover: -1,
+      probabilityView: -1,
+    
+    }
+    let counter = 0;
+
+   
     fetch(urlYellowknife)
       .then(res => res.json()) 
       .then((data) => { 
@@ -39,6 +50,7 @@ class App extends Component {
       </div>
       <div className="jumbotron">
         <header className="App-header">
+     
           <h1 id="location">Where to?</h1>
           <p id="cloud">Whats the cloud cover like?</p>
           <p id="kp"> Whats the KP index?</p>
@@ -54,3 +66,4 @@ class App extends Component {
 }
 
 export default App;
+
