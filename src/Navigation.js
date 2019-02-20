@@ -33,6 +33,7 @@ class Navigation extends React.Component {
                           Fairbanks <span className="sr-only">(current)</span></button>
                         </li>
                       </ul>
+                        <p className = "nav-link" />Powered by <br></br> <img src={require('./auroraslogo.jpg')}/>
             </div>
           </nav>
         )
