@@ -56,7 +56,7 @@ class App extends Component {
         <header className="App-header">
           <h2>Aurora Weather data for: <b>{auroraData.nameLoc}</b></h2>
           <br></br>
-          <p>The cloud cover is currently: <b>  {auroraData.cloudCover} </b></p>
+          <p>The cloud cover is currently: <b>  {auroraData.cloudCover} </b>%</p>
           <p> The KP Index is: <b>{auroraData.kpIndex} </b></p>
           <p>The probability of seeing the Aurora is: <b>{auroraData.probabilityView}</b>%</p>
           </header>
