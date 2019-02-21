@@ -12,28 +12,28 @@ class Navigation extends React.Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                          <button className="nav-link" onClick={() => this.props.getWeather(69.6492,18.9553)}>
-                            Tromso <span className="sr-only">(current)</span>
+                          <button classname ="nav-link" onClick={() => this.props.getWeather(69.6492,18.9553)}>
+                            Tromso 
                           </button>
                         </li>
                         <li>
-                          <button className="nav-link" onClick={() => this.props.getWeather(54.7214,-113.286)}>
-                          Athabasca <span className="sr-only">(current)</span></button>
+                          <button classname ="nav-link" onClick={() => this.props.getWeather(54.7214,-113.286)}>
+                          Athabasca </button>
                         </li>
                         <li>
-                          <button className="nav-link" onClick={() => this.props.getWeather(63.7467,-68.517)}>
-                          Iqualuit <span className="sr-only">(current)</span></button>
+                          <button classname ="nav-link" onClick={() => this.props.getWeather(63.7467,-68.517)}>
+                          Iqualuit </button>
                         </li>
                         <li>
-                          <button className="nav-link" onClick={() => this.props.getWeather(62.4484,-114.42)}>
-                          Yellowknife<span className="sr-only">(current)</span></button>
+                          <button classname ="nav-link"  onClick={() => this.props.getWeather(62.4484,-114.42)}>
+                          Yellowknife</button>
                         </li>
                         <li>
-                          <button className="nav-link" onClick={() => this.props.getWeather(64.8378,-147.716)}>
-                          Fairbanks <span className="sr-only">(current)</span></button>
+                          <button classname ="nav-link"onClick={() => this.props.getWeather(64.8378,-147.716)}>
+                          Fairbanks </button>
                         </li>
                       </ul>
-                        <p className = "nav-link" />Powered by <br></br> <img src={require('./auroraslogo.jpg')}/>
+                        <p> Powered by  <img src={require('./auroraslogo.jpg')}/></p>
             </div>
           </nav>
         )
