@@ -46,15 +46,15 @@ class App extends Component {
     const { auroraData } = this.state
     console.log(backgroundImage)
     return (
+      <div style={{backgroundImage: `url(${backgroundImage})`, backgroundPosition: "center", backgroundSize: "cover" }}>
       
-      <div className ="lights">
       <div>
       <Navigation getWeather={this.getWeather} />
       <div className="container">
       </div>
       </div>
       <div className="jumbotron">
-        <header className="appheader">
+        <header className="App-header">
           <h2>Aurora Weather data for: <b>{auroraData.nameLoc}</b></h2>
           <br></br>
           <p>The cloud cover is currently: <b>  {auroraData.cloudCover} </b>%</p>
