@@ -26,11 +26,9 @@ button {
 .jumbotron {
   background: url('./northernlights.jpg') no-repeat center;
   background-size: cover;
-  background-color: rgba(0,0,0,0.80);
   background-blend-mode: multiply;
   background-attachment: fixed;
-  height: 100%;
-  width: 100%;
+  min-height: 1000px;
 }
 
 a.navbar.brand {
