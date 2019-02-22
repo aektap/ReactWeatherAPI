@@ -14,13 +14,14 @@ code {
 }
 
 button {
-  background: black;
+  background: rgb(36, 32, 32);
   color: white;
   padding:20px;
- 
-
+  
 
 }
+
+
 
 .jumbotron {
   background: url('./northernlights.jpg') no-repeat center;
@@ -32,12 +33,21 @@ button {
   width: 100%;
 }
 
-a.navbarbrand {
-  background-color:black;
+a.navbar.brand {
   color: white;
   padding: 10px;
-  font-size: 30px;
+  font-size: 25px;
   margin-left: -20px;
-  height: 100%;
 }
+
+
+
+p {
+  color:white;
+}
+
+.App-header{
+  color:white;
+}
+
 
