@@ -24,7 +24,7 @@ class App extends Component {
     let url = `https://api.auroras.live/v1/?type=all&lat=${lat}&long=${long}&forecast=false&threeday=false`;   
     let auroraData = {  }
 
-    //let counter = 0;
+    
     fetch(url)
       .then(res => res.json()) 
       .then((data) => { 
@@ -38,7 +38,7 @@ class App extends Component {
      })
     })
     .catch((error) => {
-      console.log("========error", error)
+      console.log("error", error)
     })
   };
 
@@ -55,8 +55,8 @@ class App extends Component {
       </div>
       <div className="jumbotron">
         <header className="App-header">
-          <h2>Aurora Weather data for: <b>{auroraData.nameLoc}</b></h2>
-          <br></br>
+          <h1>Select a location for the most current Aurora weather data:</h1>
+        
           <p>The cloud cover is currently: <b>  {auroraData.cloudCover} </b>%</p>
           <p> The KP Index is: <b>{auroraData.kpIndex} </b></p>
           <p>The probability of seeing the Aurora is: <b>{auroraData.probabilityView}</b>%</p>
